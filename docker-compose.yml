@@ -14,7 +14,7 @@ services:
     build: .
     container_name: "SEOnaut-app"
     ports:
-      - "${SEONAUT_PORT:-9000}:9000"
+      - "${SEONAUT_PORT:-9070}:9000"
     depends_on:
       - db
     command: sh -c "/bin/wait && /app/seonaut"
